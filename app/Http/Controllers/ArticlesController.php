@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PersonController extends Controller
+class ArticlesController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index(?string $name = 'Neal Ford')
+    public function index()
 {
-    return "The name is $name";
+    return view("articles");
 }
 
     /**
@@ -33,9 +33,9 @@ class PersonController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(?string $id = 'Neal Ford')
+    public function show(string $id)
     {
-        return "The name is $id";
+        //
     }
 
     /**
